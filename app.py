@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 import pickle
 
-with open(r"C:/Users/HOME-PC/Desktop/MIGNONE@1/cancer_patient_prediction_data.sav", 'rb') as file:
+with open(r"cancer_patient_prediction_data.sav", 'rb') as file:
     model = pickle.load(file)
     
 # Load the trained model
@@ -49,3 +49,4 @@ if st.button("Predict"):
     
     # Show result
     st.success(f"cancer patient Predicted data is : {prediction[0]:.2f}")
+
